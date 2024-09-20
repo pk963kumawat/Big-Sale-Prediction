@@ -1,0 +1,17 @@
+def big_sale_prediction(historical_sales, market_trend_factor):
+    # Step 2: Calculate average of historical sales
+    avg_sales = sum(historical_sales) / len(historical_sales)
+    
+    # Step 3: Multiply by market trend factor
+    forecasted_sales = avg_sales * market_trend_factor
+    
+    # Step 4: Return the predicted sales
+    return forecasted_sales
+
+# Example historical data and market trend factor
+historical_sales = [1000, 1500, 1200, 1600, 1400]
+market_trend_factor = 1.2  # 20% growth
+
+# Predicted sales
+predicted_sales = big_sale_prediction(historical_sales, market_trend_factor)
+print(f"Predicted Sales: {predicted_sales}")
